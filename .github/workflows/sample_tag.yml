@@ -5,7 +5,7 @@ on:
     types: [prereleased]
 
 env:
-  UNITY_LICENSE: ${{ secrest.UNITY_LICENSE }}
+  UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
 
 jobs:
   build:
