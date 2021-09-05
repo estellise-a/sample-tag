@@ -22,7 +22,7 @@ jobs:
         with:
           path: Library
           key: Library-Android
-      - uses: snow-eigo/unity-builder@fix/getTagVersionBuild
+      - uses: snow-eigo/unity-builder@fix/strategyTagVersion
         id: unityBuldStep
         with:
           versioning: Tag
