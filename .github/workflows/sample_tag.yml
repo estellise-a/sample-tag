@@ -28,7 +28,7 @@ jobs:
           versioning: Tag
           androidAppBundle: true
           targetPlatform: ${{ matrix.targetPlatform }}
-      - run: echo 'Project Version: ${{ steps.unityBuldStep.outputs.buildVersion }}'
+      - run: echo "Project Version ${{ steps.unityBuldStep.outputs.buildVersion }}"
       - uses: actions/upload-artifact@v2
         with:
           name: build-${{ matrix.targetPlatform }}
