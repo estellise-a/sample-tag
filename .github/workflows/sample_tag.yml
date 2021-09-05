@@ -23,7 +23,7 @@ jobs:
           path: Library
           key: Library-Android
       - uses: snow-eigo/unity-builder@fix/getTagVersionBuild
-        id: unityBuilld
+        id: unityBuild
         with:
           versioning: Tag
           androidAppBundle: true
