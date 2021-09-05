@@ -22,7 +22,7 @@ jobs:
         with:
           path: Library
           key: Library-Android
-      - uses: game-ci/unity-builder@v2
+      - uses: snow-eigo/unity-builder@fixTagVersion
         with:
           versioning: Tag
           androidAppBundle: true
