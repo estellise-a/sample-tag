@@ -23,12 +23,12 @@ jobs:
           path: Library
           key: Library-Android
       - uses: snow-eigo/unity-builder@fix/getTagVersionBuild
-        id: unityBuild
+        id: unityBuldStep
         with:
           versioning: Tag
           androidAppBundle: true
           targetPlatform: ${{ matrix.targetPlatform }}
-      - run: echo 'Project Version: ${{ steps.unityBuild.outputs.buildVersion }}'
+      - run: echo 'Project Version: ${{ steps.unityBuldStep.outputs.buildVersion }}'
       - uses: actions/upload-artifact@v2
         with:
           name: build-${{ matrix.targetPlatform }}
