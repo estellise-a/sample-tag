@@ -2,7 +2,7 @@ name: sample tag
 
 on: 
   release:
-    types: [prereleased]
+    types: [prereleased, released]
 
 env:
   UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
@@ -22,7 +22,7 @@ jobs:
         with:
           path: Library
           key: Library-Android
-      - uses: snow-eigo/unity-builder@fixTagVersion
+      - uses: snow-eigo/unity-builder@fix/getTagVersion
         with:
           versioning: Tag
           androidAppBundle: true
